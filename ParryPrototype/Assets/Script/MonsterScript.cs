@@ -36,6 +36,8 @@ public class MonsterScript : MonoBehaviour
 
     void Start()
     {
+        healthText.text = "Monster health: " + health;
+
         StartCoroutine(attackTimer());
         attackIndicator.SetActive(false);
         foreach (GameObject ar in arrows)
